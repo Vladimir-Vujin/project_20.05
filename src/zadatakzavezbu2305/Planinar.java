@@ -9,6 +9,7 @@ Pored toga, klasa ima:
 - apstraktnu metodu uspesanUspon koja vraća informaciju da li će se planinar upešno popeti na planinu.
 Metoda kao ulazni parametar prima objekat tipa Planina.
 * */
+
 public abstract class Planinar {
     private int id;
     private String imePlaninara;

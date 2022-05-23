@@ -2,12 +2,14 @@ package zadatakzavezbu2305;
 
 import java.util.ArrayList;
 
-/*Kreirati glavnu klasu I u njoj:
-instancirati jednu planinu
-napraviti niz ili listu koji ce sadrzati najmanje tri rekrativna planinara I tri alpiniste
-ispisati podatke o svim planinarima I za svakog od planinara ispisati da li ce se popeti na instanciranu planin
-ispisati kolika je zbir svih clanarina planinara iz niza/liste
-* */
+/*
+Kreirati glavnu klasu I u njoj:
+ - instancirati jednu planinu
+ - napraviti niz ili listu koji ce sadrzati najmanje tri rekrativna planinara I tri alpiniste
+ - ispisati podatke o svim planinarima I za svakog od planinara ispisati da li ce se popeti na instanciranu planinu
+ - ispisati kolika je zbir svih clanarina planinara iz niza/liste
+*/
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,6 +31,7 @@ public class Main {
         planinari.add(new Alpinista(128, "Ivan", "Ivanovic",
                 17));
 
+        System.out.println("SPISAK PLANINARA (REKREATIVNIH I ALPINISTA):");
         stampaLinije();
 
         int ukupnaClanarina = 0;
