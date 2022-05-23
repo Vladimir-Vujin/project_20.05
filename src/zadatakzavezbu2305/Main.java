@@ -29,13 +29,21 @@ public class Main {
         planinari.add(new Alpinista(128, "Ivan", "Ivanovic",
                 17));
 
+        stampaLinije();
+
         int ukupnaClanarina = 0;
         for (Planinar planinar : planinari) {
             planinar.stampaj();
-            System.out.println(planinar.uspesanUspon(planina));
+            System.out.println("Planinar će savladati uspon: " + planinar.uspesanUspon(planina));
+            stampaLinije();
             ukupnaClanarina += planinar.clanarina();
         }
 
-        System.out.println(ukupnaClanarina);
+        System.out.println("Ukupna članarina za sve planinare: " + ukupnaClanarina + " din");
+        stampaLinije();
+    }
+
+    public static void stampaLinije(){
+        System.out.println("-------------------------------------------");
     }
 }

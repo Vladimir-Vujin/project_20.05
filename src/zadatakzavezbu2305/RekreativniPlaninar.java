@@ -55,7 +55,7 @@ public class RekreativniPlaninar extends Planinar {
     @Override
     public void stampaj() {
         System.out.println("Rekreativac, id: " + getId() + "\n" +
-                "ime: " + getImePlaninara() + " " + getPrezimePlaninara() + " Okrug: " + nazivOkruga);
+                "ime: " + getImePlaninara() + " " + getPrezimePlaninara() + "\nOkrug: " + nazivOkruga);
     }
 
     @Override
@@ -65,7 +65,9 @@ public class RekreativniPlaninar extends Planinar {
 
     @Override
     public boolean uspesanUspon(Planina planina) {
-        if(tezinaOpreme * 50 > maksimalniUspon)
+        if (planina.getVisinaPlanine() == 0)
+            return false;
+        if (tezinaOpreme * 50 >= maksimalniUspon)
             return false;
         else
             return ((maksimalniUspon - (tezinaOpreme * 50)) > planina.getVisinaPlanine());

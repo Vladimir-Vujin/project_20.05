@@ -40,7 +40,8 @@ public class Planina {
     public Planina(String imePlanine, String nazivDrzave, int visinaPlanine) {
         this.imePlanine = imePlanine;
         this.nazivDrzave = nazivDrzave;
-        this.visinaPlanine = visinaPlanine;
+        //this.visinaPlanine = visinaPlanine;
+        setVisinaPlanine(visinaPlanine);
     }
 
     public String getImePlanine() {
@@ -64,6 +65,9 @@ public class Planina {
     }
 
     public void setVisinaPlanine(int visinaPlanine) {
-        this.visinaPlanine = visinaPlanine;
+        if (visinaPlanine > 0)
+            this.visinaPlanine = visinaPlanine;
+        else
+            System.err.println("Visina planine ne može biti negativan broj!");
     }
 }

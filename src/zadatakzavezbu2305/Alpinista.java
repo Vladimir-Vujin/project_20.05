@@ -41,6 +41,8 @@ public class Alpinista extends Planinar {
 
     @Override
     public boolean uspesanUspon(Planina planina) {
+        if (planina.getVisinaPlanine() == 0)
+            return false;
         if (planina.getVisinaPlanine() <= 4000)
             return true;
         else
