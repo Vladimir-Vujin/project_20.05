@@ -13,7 +13,7 @@ a informacije o alpinisti se ispisuju u formatu:
 public class Alpinista extends Planinar {
 
     private int brojPoena;
-    private static final int clanarina = 1500;
+    static final int clanarina = 1500;
 
     public Alpinista(int ID, String imePlaninara, String prezimePlaninara, int brojPoena) {
         super(ID, imePlaninara, prezimePlaninara);
@@ -37,7 +37,6 @@ public class Alpinista extends Planinar {
     @Override
     public double clanarina() {
         if (brojPoena <= 30)
-            //
             return clanarina - (brojPoena * 50);
         else
             return 0;

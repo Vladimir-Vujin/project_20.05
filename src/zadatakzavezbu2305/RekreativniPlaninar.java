@@ -25,7 +25,7 @@ public class RekreativniPlaninar extends Planinar {
     private int tezinaOpreme;
     private String nazivOkruga;
     private int maksimalniUspon;
-    private static final int clanarina = 1000;
+    static final int clanarina = 1000;
 
     public RekreativniPlaninar(int ID, String imePlaninara, String prezimePlaninara, int tezinaOpreme, String nazivOkruga, int maksimalniUspon) {
         super(ID, imePlaninara, prezimePlaninara);
@@ -66,7 +66,6 @@ public class RekreativniPlaninar extends Planinar {
 
     @Override
     public double clanarina() {
-        //return 1000;
         return clanarina;
     }
 
